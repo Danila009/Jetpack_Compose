@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Jetpack Compose</string>
+    <string name="title_activity_list">List</string>
+    <string name="title_activity_scroll_state">scrollState</string>
+</resources>
