@@ -22,16 +22,15 @@ class scrollState : ComponentActivity() {
         setContent {
             JetpackComposeTheme {
                 Column() {
-
+                    ScrollList()
                 }
             }
         }
     }
 }
 
-@SuppressLint("ComposableNaming")
 @Composable
-fun scroll() {
+fun ScrollList() {
     val scrollState = rememberScrollState()
     LaunchedEffect(Unit) { scrollState.animateScrollTo(10000) }
     Column(modifier = Modifier.verticalScroll(scrollState)) {
@@ -46,6 +45,6 @@ fun scroll() {
 @Composable
 fun DefaultPreview() {
     JetpackComposeTheme {
-        scroll()
+        ScrollList()
     }
 }
